@@ -50,7 +50,6 @@
 .card-back-description-container {
     border-radius: 2mm;
     padding:2mm;
-    margin-top: 2mm;
     background-color: rgb(228, 225, 203);
     font-size: inherit;
     height: 40%;
@@ -82,10 +81,15 @@
     background-size: contain;
 }
 
-.card-header {
+.card-back-banner,
+.card-header
+{
     display: flex;
 }
 .card-header > * {
+    flex-grow: 1;
+}
+.card-back-banner > * {
     flex-grow: 1;
 }
 
@@ -119,6 +123,44 @@
     border-color: inherit;
     padding: 1mm 0 1mm 1mm;
 }
+
+.card-back-title {
+    padding-left: 2mm;
+    font-family: Lora, 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: inherit;
+    color: white;
+}
+.card-back-title-16 {
+    font-size: 16pt;
+    line-height: 6.5mm;
+}
+.card-back-title-15 {
+    font-size: 15pt;
+    line-height: 6.5mm;
+}
+.card-back-title-14 {
+    font-size: 14pt;
+    line-height: 6.5mm;
+}
+.card-back-title-13 {
+    font-size: 13pt;
+    line-height: 7mm;
+}
+.card-back-title-12 {
+    font-size: 12pt;
+    line-height: 7mm;
+}
+.card-back-title-11 {
+    font-size: 11pt;
+    line-height: 7.5mm;
+}
+.card-back-title-10 {
+    font-size: 10pt;
+    line-height: 7.5mm;
+}
+
 
 .card-title {
     height: 8mm;

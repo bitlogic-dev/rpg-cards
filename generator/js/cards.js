@@ -108,6 +108,12 @@ function card_element_title(card_data, options) {
     return '<div class="card-title card-title-' + title_size + '">' + title + '</div>';
 }
 
+function cardback_element_title(card_data, options) {
+    var title = card_data.title || "";
+    var title_size = card_data.title_size || options.default_title_size || 'normal';
+    return '<div class="card-back-title card-back-title-' + title_size + '">' + title + '</div>';
+}
+
 function card_element_icon(card_data, options) {
     var icons = card_data_icon_front(card_data, options).split(/[\s\uFEFF\xA0]+/).filter(icon=>icon);
     var classname = "icon";
@@ -624,6 +630,9 @@ function card_generate_back(data, options) {
     {
         result += '  <div class="card-back">';
         result += '     <div class="card-back-portrait-container" ' + background_style + '></div>';
+        result += '     <div class="card-back-banner">';
+        result +=           cardback_element_title(data, options);
+        result += '     </div>';
         result += '     <div class="card-back-description-container">';
         result +=           html;
         result += '     </div>';
