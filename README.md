@@ -6,7 +6,7 @@ RPG spell/item/monster card generator
 Preview
 =======
 
-Click [here](https://rpg-cards.vercel.app) for a live preview of this generator.
+Click [here](https://rpg-cards.onrender.com/index.html) for a live preview of this generator.
 
 Documentation
 =============
